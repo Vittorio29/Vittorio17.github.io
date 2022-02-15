@@ -1,0 +1,136 @@
+body{
+font-family:  monospace;
+font-size: 20pt;
+background-color: #5d5d5d;
+min-height: 100vh;
+padding: 0%;
+margin: 0%;
+}
+
+#wrapper{
+width: 75%;
+min-width: 700px;
+max-width: 1100px;
+min-height: 100vh;
+padding: 0;
+margin-top:  0;
+margin-bottom: 0;
+margin-right: auto;
+margin-left: auto;
+flex-direction: column;
+}
+
+header{
+background-color: #edebea;
+height: 95px;
+padding-top:10px;
+padding-bottom: 10px;
+padding-right: 20px;
+padding-left: 20px;
+margin-top:  10px;
+margin-bottom: 0;
+margin-right: 0;
+margin-left: 0;
+}
+
+#container{
+	background-color: #e5e8ca;
+	padding:0;
+	margin: 0;
+	flex: 1 1;
+    display: flex;
+}
+
+nav{
+	font-size: 11pt;
+	padding: 5px;
+	margin: 0;
+	flex:1 1;
+}
+
+main{
+	background-color: white;
+	font-size: 15pt;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	padding-right: 15px;
+	padding-left: 25px;
+	flex: 5 5;
+}
+
+
+
+#img{
+	text-align: center;
+	font-size: 2px;
+}
+a{
+	color:black;
+}
+
+#titolo{
+	font-size: 30pt;
+}
+
+/*menu*/
+#menu ul {
+margin:0px;
+padding:0px;
+list-style-type:none;
+}
+#menu ul a:link, ul a:visited{
+display:block;
+padding:10px;
+text-decoration:none;
+color:black;
+text-transform:uppercase;
+}
+#menu ul a:hover {
+background-color:white;
+}
+
+/*fine menu*/
+
+#intro{
+	text-align: center;
+	margin-top:200px;
+	font-size: 30pt;
+}
+
+nav{
+	font-size: 15pt;
+}
+
+#cubo_di_rubik{
+	width:300px;
+	height: 250px;
+}
+
+#whatsapp{
+	width: 40px;
+	height: 40px;
+}
+
+footer{
+	background-color: gray;
+
+}
+
+#designed{
+	font-size:10pt;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+#bici{
+	width: 350px;
+	height: 200px;
+	float: left;
+}
+
+#benvenuto{
+	display:block;
+    margin:0px auto;
+    text-align:center;
+}
