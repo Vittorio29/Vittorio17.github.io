@@ -1,0 +1,28 @@
+.home{
+	font-size: 20pt;
+	text-align: center;
+	font-family:  monospace;
+}
+table {
+    border: 1px solid #000;
+}
+
+.return{
+	font-size: 20pt;
+}
+
+body{
+	font-size: 15pt;
+}
+
+#img_museo{
+	height: 500px;
+}
+
+.map{
+	float: left;
+}
+
+td, th {
+	border: medium solid gray;
+}
