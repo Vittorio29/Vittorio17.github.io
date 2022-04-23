@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<link href="stile.css" rel="stylesheet" type="text/css" media="screen" />
+	<script src="https://kit.fontawesome.com/fd19198354.js" crossorigin="anonymous"></script>
+	<script>
+		function postForm(){
+			var messaggioInviato;
+			messaggioInviato="Grazie per aver inviato un messaggio";
+			document.getElementById("messaggioinviato").innerHTML = messaggioInviato;
+			document.getElementById("messaggioinviato")=messaggioInviato;
+		}
+		function validateForm() {
+  			var name = document.forms["invioMessaggio"]["nome"];
+ 			var cognome = document.forms["invioMessaggio"]["cognome"];
+        	var email = document.forms["invioMessaggio"]["email"];
+        	var telefono=document.forms["invioMessaggio"]["telefono"];
+        	var password = document.forms["invioMessaggio"]["password"];
+        	var confermapassword=document.forms["invioMessaggio"]["confermapassword"];
+        	if (name.value == "") {
+            	window.alert("Il campo Nome non può essere vuoto");
+            	name.focus();
+            	return false;
+       		}
+       		if (cognome.value == "") {
+            	window.alert("Il campo Cognome non può essere vuoto");
+            	cognome.focus();
+            	return false;
+       		}
+ 			if (email.value == "") {
+            	window.alert("Il campo Email non può essere vuoto");
+            	email.focus();
+            	return false;
+        	}	
+  			if (telefono.value == "") {
+            	window.alert("Il campo Telefono non può essere vuoto");
+            	telefono.focus();
+            	return false;
+        	}	
+        	if (password.value == "") {
+           		window.alert("Il campo Password non può essere vuoto");
+           		password.focus();
+            	return false;
+        	}
+  			if(password.value!=confermapassword.value){
+  				window.alert("Le password non corrispondono");
+  			}
+        return true;
+    }
+</script>
+
+	<title>
+		sito personale
+	</title>
+	
+</head>
+<body>
+	<div id="wrapper">
+		<div id="container">
+			<nav>
+				<div id="menu">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+				</ul>
+			</div>
+			</nav>
+
+			<main>
+				<div>
+					<h1>Registrazione</h1>
+					<form name="invioMessaggio" onsubmit="return validateForm()">
+						<h3>Nome</h3>
+						<input type="text" id="nome" name="nome" size="50" maxlength="30" />
+						<h3>Cognome</h3>
+						<input type="text" id="cognome" name="cognome" size="50" maxlength="30" />
+						<h3>E-mail</h3>
+						<input type="text" name="email" size="70" maxlength="70">
+						<h3>Telefono</h3>
+						<input type="text" name="telefono" size="70" maxlength="70">
+						<h3>Password</h3>
+						<input type="Password" id="password" name="password" size="20" maxlength="20" />
+						<h3>Conferma Password</h3>
+						<input type="Password" id="confermapassword" name="confermapassword" size="20" maxlength="20" /><br/>
+						<input type="submit" name="b1" value="Invia"/>
+						<input type="reset" name="b2" value="Annulla">
+					</form>
+					<br/>
+						<h1 id="messaggioinviato"></h1>
+					<br/>
+				</div>
+			</main>
+		</div>
+		<footer>
+				&nbsp; &nbsp;
+				<i class="fa-brands fa-whatsapp"> +39 3341065432</i> &nbsp; &nbsp; &nbsp; &nbsp;
+          		<i class="fa-brands fa-facebook"> vittorio_gianfredi</i> &nbsp; &nbsp; &nbsp; &nbsp;
+          		<i class="fa-brands fa-instagram"> vittorio_gianfredi</i> &nbsp; &nbsp; &nbsp; &nbsp;
+          		<div id="designed">
+          			<p >Designed by <b>Vittorio Gianfredi</b></p>
+          		</div>
+          		
+		</footer>
+	</div>
+
+</body>
+</html>
