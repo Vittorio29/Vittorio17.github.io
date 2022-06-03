@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function calcola(){
+			var val=document.getElementById("val").value;
+			if(val%2==0){
+				document.getElementById("risultato").innerHTML="Numero pari";
+				document.getElementById("risultato").style.color="green";
+			}
+			else{
+				document.getElementById("risultato").innerHTML="Numero dispari";
+				document.getElementById("risultato").style.color="red";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Pari e dispari</h1>
+	<input type="text" id="val">
+	<button onclick="calcola()">Clicca!</button>
+	<p id="risultato"></p>
+</body>
+</html>
