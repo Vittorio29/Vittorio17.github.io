@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stile.css">
+	<script>
+    	function bitcoin(){
+        	var quotazione=document.getElementById("quotazione").value;
+            var portafoglio=document.getElementById("portafoglio").value;
+            
+            if(quotazione<=18000){
+            	document.getElementById("risultato").innerHTML="Bitcoin da comprare "+(portafoglio/quotazione);
+            }
+            else{
+            	document.getElementById("risultato").innerHTML="Non comprare";
+            }
+        }	
+    </script>
+</head>
+<body>
+	<div id="centro">
+		<h2>Quotazione</h2>
+		<input type="text" id="quotazione">
+		<h2>Portafoglio</h2>
+		<input type="text" id="portafoglio"><br/>
+    	<a onclick="bitcoin()" id="pulsante">Calcola</a>
+    	<p id="risultato"></p>
+    </div>
+</body>
+</html>
